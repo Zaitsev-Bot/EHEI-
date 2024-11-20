@@ -1,0 +1,17 @@
+{
+    "name": "Octave Setup",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "extensions": [
+      "ms-vscode.cpptools",    // Optional: Add useful extensions
+      "ms-python.python"
+    ],
+    "postCreateCommand": "bash setup_octave.sh",
+    "forwardPorts": [],
+    "remoteUser": "vscode"
+  }
+  
