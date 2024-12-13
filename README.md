@@ -32,6 +32,9 @@ This file contains instructions for pushing changes to GitHub.
    - Stage the resolved files:  
      ```bash
      git add <file-name>
+     or 
+     git commit -m "Add model architecture and save functionality"
+
      ```  
    - Finalize the merge:  
      ```bash
