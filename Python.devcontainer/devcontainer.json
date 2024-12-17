@@ -4,14 +4,19 @@
     "customizations": {
         "vscode": {
             "settings": {
-                "terminal.integrated.defaultProfile.linux": "bash"
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "python.analysis.extraPaths": ["./"],
+                "python.analysis.diagnosticSeverityOverrides": {
+                    "reportMissingImports": "none"
+                }
             },
             "extensions": [
-                "ms-python.python"
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-python.pylance"
             ]
         }
     },
     "postCreateCommand": "pip install -r requirements.txt",
     "remoteUser": "vscode"
 }
-
